@@ -16,21 +16,21 @@ function Footer() {
             position:"relative"}}>
     
         <Tabs defaultActiveKey="profile"
-          id="uncontrolled-tab-example" style={{backgroundColor:"#fff"}}>
+          id="uncontrolled-tab-example" style={{backgroundColor:"#CDF2CB"}}>
           
-          <Tab eventKey="inicio" title="Início" >
+          <Tab eventKey="inicio" style={{backgroundColor:"#F2E4EC"}} title="Início" >
           <Inicio/>       
           </Tab>
 
-          <Tab eventKey="sobre" title="Sobre Nós">
+          <Tab eventKey="sobre" style={{backgroundColor:"#F2E4EC"}} title="Sobre Nós">
            <Sobre/>
            </Tab>
 
-          <Tab eventKey="equipe" title="Equipe" >  
+          <Tab eventKey="equipe" style={{backgroundColor:"#F2E4EC",}} title="Equipe" >  
             <Equipe/>            
           </Tab>
 
-          <Tab eventKey="contato" title="Contato" >
+          <Tab eventKey="contato" style={{backgroundColor:"#F2E4EC"}} title="Contato" >
           <Contato/>
           </Tab>
 
