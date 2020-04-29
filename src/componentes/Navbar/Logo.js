@@ -7,7 +7,7 @@ function Logo() {
 
   return (
     <Col lg={{span: 2,order:0}} md={{ span: 2,order:0}} sm={{span: 3,order:0}} xs={{ span: 3,order:0}}  style={{ }}>
-        <Image src={logoImage}  style={{ width: "110px", height:"110px",marginTop:'1.2vh',}} roundedCircle />
+        <Image src={logoImage}  style={{ width: "90px", height:"90px",marginLeft:"1em",marginTop:"0.5em"}} roundedCircle />
     </Col>
   );
 }

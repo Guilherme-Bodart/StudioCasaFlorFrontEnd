@@ -11,26 +11,22 @@ import Contato from './Contato'
 
 function Footer() {
   return (
-    <footer style={{backgroundColor:"#fff", height:"10vh",
-            minHeight:"200px", bottom:"2vh",marginTop:"2vh",
+    <footer style={{backgroundColor:"#FEFCFD", height:"5vh",
+            minHeight:"200px", bottom:"2vh",marginTop:"3vh",
             position:"relative"}}>
     
-        <Tabs defaultActiveKey="profile"
-          id="uncontrolled-tab-example" style={{backgroundColor:"#CDF2CB"}}>
-          
-          <Tab eventKey="inicio" style={{backgroundColor:"#F2E4EC"}} title="Início" >
-          <Inicio/>       
-          </Tab>
-
-          <Tab eventKey="sobre" style={{backgroundColor:"#F2E4EC"}} title="Sobre Nós">
+        <Tabs defaultActiveKey="profile"//BCE36E
+          id="uncontrolled-tab-example" style={{backgroundColor:"#FEF9FC",borderTopRightRadius:10,borderTopLeftRadius:10}}>
+            
+          <Tab eventKey="sobre" style={{backgroundColor:"#FEFCFD"}} title="Sobre Nós">
            <Sobre/>
            </Tab>
 
-          <Tab eventKey="equipe" style={{backgroundColor:"#F2E4EC",}} title="Equipe" >  
+          <Tab eventKey="equipe" style={{backgroundColor:"#FEFCFD"}} title="Equipe" >  
             <Equipe/>            
           </Tab>
 
-          <Tab eventKey="contato" style={{backgroundColor:"#F2E4EC"}} title="Contato" >
+          <Tab eventKey="contato" style={{backgroundColor:"#FEFCFD"}} title="Contato" >
           <Contato/>
           </Tab>
 

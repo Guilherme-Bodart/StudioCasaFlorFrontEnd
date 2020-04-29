@@ -7,7 +7,7 @@ import MenuNav from "./MenuNav";
 function Navegar() {
 
   return (
-      <Row style={{height:"15vh", minHeight:"125px"}}>
+      <Row style={{height:"13vh", minHeight:"100px",backgroundColor:"#FEFDFE"}}>
         <Logo/>
         <Banner/>
         <MenuNav/>

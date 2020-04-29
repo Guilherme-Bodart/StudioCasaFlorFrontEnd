@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function MenuNav() {
   const [showButtonS, setShowButtonS] = useState(false)
-  const botaoPesquisa = <Button variant="outline-info"
+  const botaoPesquisa = <Button variant="outline-secondary"
                           onClick={ () => {setShowButtonS(!showButtonS)}
                           }><FontAwesomeIcon icon={faSearch} />
                         </Button>
@@ -27,15 +27,15 @@ function MenuNav() {
                                       </InputGroup>
 
   return (
-    <Col  lg={{span: 3, order:2}} md={{ span: 4, order:2}} sm={{span: 9, order:1}} xs={{ span: 9, order:1}} style={{marginTop:"1vh"}}>
-        <Navbar variant="light" bg="outline-light" style={{fontSize:"1.3em" }}>
+    <Col  lg={{span: 3, order:2}} md={{ span: 4, order:2}} sm={{span: 9, order:1}} xs={{ span: 9, order:1}} style={{marginTop:"0.5vh"}}>
+        <Navbar variant="light" bg="outline-light" style={{fontSize:"1.3em"}}>
         <Nav className="ml-auto">
             <Nav.Link  href="#inicio" style={{marginRight:"0.4em"}}>Início</Nav.Link>
             <Nav.Link href="#sobre" style={{marginRight:"0.4em"}}>Sobre</Nav.Link>
             <Nav.Link href="#contato" style={{marginRight:"0.4em"}}>Contato</Nav.Link>
         </Nav>
         </Navbar>
-        <Navbar variant="light" bg="outline-light" style={{ }}>
+        <Navbar variant="light" bg="outline-light" style={{ marginTop:"-1.4em"}}>
         <Form inline className="ml-auto">
             
             {campoPesquisa}

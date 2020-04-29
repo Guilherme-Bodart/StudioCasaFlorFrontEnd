@@ -1,34 +1,35 @@
 import React from "react";
-import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
-import NavDropdown from "react-bootstrap/NavDropdown"
+import { LocalFloristOutlined, ContactMailOutlined, HomeOutlined } from '@material-ui/icons'
 
 function MenuCorpo() {
-  return (
-        <Col md={{span:2}} style={{backgroundColor:"#CDF2CB",margin:"1em",maxWidth:"10vw",borderRadius:10}}>
-            <Navbar collapseOnSelect expand="lg">
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto flex-column">
-                        <Col>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        </Col>
-                        <Col>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        </Col>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-        </Col>
+    return (
+            <Col lg={{ span: 1}} md={{ span: 1}} sm={{ span: 1}} xs={{ span: 1}} style={{borderRadius:10}}>
+                <Navbar collapseOnSelect expand="lg" style={{width:"13vw"}}>
+                
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav  className="mr-auto flex-column" style={{width:"10vw",borderBottom:"solid 0.5px",borderColor:"#aaa"}}>
+                        <Navbar.Brand style={{color:"#aaa",fontSize:"1.5em"}}>Atalhos</Navbar.Brand>
+                            <Row >
+                                <Nav.Link href="#decoracao" style={{fontSize:"18px"}}> <HomeOutlined style={{fontSize:"1.5em",marginBottom:"0.2em",marginRight:"0.1em"}}/> 
+                                                                                        Decoração </Nav.Link>
+                            </Row>
+                            <Row>
+                                <Nav.Link href="#acessoria" style={{fontSize:"18px"}}> <ContactMailOutlined style={{fontSize:"1.5em",marginBottom:"0.2em",marginRight:"0.1em"}}/> 
+                                                                                        Acessoria</Nav.Link>
+                            </Row>
+                            <Row>
+                                <Nav.Link href="#designfloral" style={{fontSize:"18px"}}> <LocalFloristOutlined style={{fontSize:"1.5em",marginBottom:"0.2em",marginRight:"0.1em"}}/> 
+                                                                                        Design Floral</Nav.Link>
+                            </Row>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </Col>
 
   );
 }
